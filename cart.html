@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyStore - Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">🛍️ MyStore</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart-page">
+    <h1>Your Cart</h1>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- Cart rows are rendered dynamically by script.js from localStorage -->
+      </tbody>
+      <tfoot>
+        <tr class="grand-total">
+          <td colspan="3">Grand Total</td>
+          <td id="cart-grand-total">₹0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+  </section>
+
+  <footer class="site-footer">
+    <p>Contact us: support@mystore.com | +91-98765-43210</p>
+    <p>&copy; 2026 MyStore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
